@@ -1,0 +1,126 @@
+
+/* Section */
+#skills {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Section Title */
+.skills-title {
+  color: #a855f7;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.skills-title + p {
+  color: #d1d5db;
+}
+
+.skills-title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #a855f7, #8b5cf6);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Category Cards */
+.skill-category-card {
+  background: linear-gradient(
+    145deg,
+    rgba(168, 85, 247, 0.1),
+    rgba(139, 92, 246, 0.05)
+  );
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  border-color: #a855f7;
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.2);
+}
+
+.skill-item-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-item-card:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Tools */
+.tool-card {
+  background: linear-gradient(
+    145deg,
+    rgba(168, 85, 247, 0.15),
+    rgba(139, 92, 246, 0.08)
+  );
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(15px);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.tool-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2), transparent);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%);
+}
+
+.tool-card:hover::before {
+  width: 120px;
+  height: 120px;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  border-color: #a855f7;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+}
+
+.tool-icon {
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.tool-card:hover .tool-icon {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.6));
+}
+
+/* Learning Badges */
+.learning-badge {
+  background: linear-gradient(45deg, #a855f7, #8b5cf6);
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.learning-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2.5rem !important;
+  }
+}

@@ -1,0 +1,154 @@
+/* Project Card */
+.project-card {
+  background: linear-gradient(145deg, rgba(168, 85, 247, 0.1), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a855f7, transparent);
+  transition: left 0.5s ease;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+}
+
+/* Project Image */
+.project-image {
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Hover Overlay */
+.project-overlay {
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Tech Badges */
+.tech-badge {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(139, 92, 246, 0.1));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #a855f7;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tech-badge:hover {
+  background: #a855f7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Project Buttons */
+.btn-project {
+  background: #a855f7;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-project::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  transform: translate(-50%, -50%);
+}
+
+.btn-project:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.btn-project:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+}
+
+/* View All Button */
+.btn-view-all {
+  background: transparent;
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.btn-view-all::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #a855f7;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-view-all:hover::before {
+  left: 0;
+}
+
+.btn-view-all:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+}
+
+/* Section Title */
+.projects-title {
+  color: #a855f7;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.5rem !important;
+  }
+}
