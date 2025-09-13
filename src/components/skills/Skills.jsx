@@ -20,7 +20,7 @@ import {
   SiRender,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import "./Skills.css"; // ✅ Import new CSS
+import './skills.css'
 
 const Skills = () => {
   const frontendSkills = [

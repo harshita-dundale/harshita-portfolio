@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import "./contact.css"; // Import external CSS
+import './contact.css'
 
 const Contact = () => {
   const form = useRef();
