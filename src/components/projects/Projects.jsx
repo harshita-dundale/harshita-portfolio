@@ -18,7 +18,7 @@ const Projects = () => {
         "Developed a full-stack app with JWT authentication & bcrypt for secure login/signup. Implemented CRUD operations for personal notes with real-time updates and built RESTful APIs with authentication/authorization middleware.",
       image: "/notes.png",
       tech: ["React", "Node.js", "MongoDB", "Bootstrap", "JWT", "Bcrypt.js"],
-      demo: "#",
+      demo: "https://notes-app-zry3.vercel.app/",
       code: "https://github.com/harshita-dundale/notes-app",
     },
     {
@@ -27,8 +27,8 @@ const Projects = () => {
         "Built a dynamic quiz app with real-time question rendering, timer-based interaction, and score tracking. Integrated JSON & Fetch API for asynchronous loading, used local storage to save progress, and enhanced UX with a clean, responsive UI.",
       image: "/Quiz.png",
       tech: ["HTML", "CSS", "JavaScript", "JSON", "LocalStorage"],
-      demo: "#",
-      code: "#",
+      demo: "https://quiz-app-gules-nu.vercel.app/QuizApp.html",
+      code: "https://github.com/harshita-dundale/Quiz-App",
     },
   ];
 
