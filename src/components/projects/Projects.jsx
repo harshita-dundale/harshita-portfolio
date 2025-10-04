@@ -9,7 +9,7 @@ const Projects = () => {
         "Built a full-stack app using React, Node.js, and MongoDB where builders can manage jobs, attendance, and profit/loss, while workers apply and track requests with real-time updates. Integrated Auth0 for secure authentication.",
       image: "/construction.png",
       tech: ["React", "Node.js", "MongoDB", "Bootstrap", "Auth0", "Cloudinary"],
-      demo: "#",
+      demo: "https://construction-management-system-98j5.vercel.app/",
       code: "https://github.com/harshita-dundale/Construction-Management-System",
     },
     {
